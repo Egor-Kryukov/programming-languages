@@ -1,0 +1,13 @@
+n = int(input("Введите количество чисел n: "))
+
+count = 0
+total = 0
+
+for i in range(n):
+    x = int(input("Введите число: "))
+    if x < 0:
+        count = count + 1
+        total = total + x
+
+print("Количество отрицательных:", count)
+print("Сумма отрицательных:", total)
